@@ -1,0 +1,106 @@
+Project for E-book made in fusion
+
+Diagrama:
+https://docs.google.com/drawings/d/1UpxRyJNfczJHhNRvWdeb5kh_7IEUy5173odk93W_GSA/edit
+
+_______
+Hardware Modules Overview
+ESP32-C6-WROOM-1-N8 – Core Microcontroller
+Power Supply: 3.3V
+Communication Protocols: SPI, I2C, UART, GPIO
+Pin Mapping: Below, each module's interface is connected to the respective microcontroller pins.
+
+USB-C Connector + ESD Protection
+Main input for power and data transfer
+TVS diodes included for electrostatic discharge (ESD) protection
+
+LiPo Battery Fuel Gauge
+Built-In charging controller
+IC: MAX17048G+T10 for battery level monitoring
+I2C Interface: SCL/SDA for communication with the Battery ChargeLevel IC
+Qwiic / Stemma QT Connector for communication via I2C
+
+Reset and Boot Buttons
+BOOT: IO9
+RESET: EN (Enable)
+Reverse polarity protection diodes for safety
+
+LDO Voltage Regulator
+Converts 5V to 3.3V, providing power to the ESP32-C6 and connected peripherals
+
+External Flash - NOR Flash 64MB
+Connection Type: SPI
+FLASH_CS: IO11
+Shared SPI Lines: MOSI, MISO, SCK (with SD card and e-paper)
+
+Environmental Sensor - BME688
+Protocol: I2C (shared with RTC)
+Voltage Supply: 3.3V
+Pin Assignments: SDA, SCL
+
+E-Paper Display
+Connection Type: SPI
+EPD_CS: IO10
+EPD_DC: IO5
+EPD_RST: IO23
+EPD_BUSY: IO3
+Shared SPI Lines: MOSI, SCK with SD Card
+
+RTC Module - DS3231SN
+Connection Type: I2C
+SCL: IO22
+SDA: IO21
+INT_RTC: IO8
+32KHZ: IO1
+RTC_RST: IO18
+
+SD Card Interface
+Connection Type: SPI
+SS_SD: IO4
+MOSI: IO7
+MISO: IO2
+SCK: IO6
+
+SPI Line Protection
+Safeguards the SPI communication lines used by external modules like the SD card, e-paper display, and external flash
+______
+
+ESP32-C6 PINS
+Protocol	ESP32-C6 Assigned Pins		Attached Devices
+USB				GPIO13, GPIO12			Power supply & host communication
+I2C				GPIO22, GPIO24			Environmental sensor (BME688), RTC, Battery voltage monitor
+SPI			  GPIO7, GPIO2, GPIO6		E-paper display, NOR flash memory, SD storage
+UART			GPIO16, GPIO17			Debugging / Firmware change
+GPIO			GPIO0...GPIO23			Buttons, indicator outputs
+
+BOM and links
+BUTTON_CUSYOMV1 https://eu.mouser.com/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D
+100nF capacitor https://store.comet.srl.ro/Catalogue/Product/48939/
+CPH3225A        https://eu.mouser.com/ProductDetail/Seiko-Semiconductors/CPH3225Aqs=3etwrb1wR%252BhUOph6lAO7eg%3D%3D
+1.7uF 			capacitorhttps://store.comet.srl.ro/Catalogue/Product/5163462/
+USBLC6-2SC6Y    https://eu.mouser.com/ProductDetail/STMicroelectronics/USBLC6-2SC6Yqs=gNDSiZmRJS%2FOgDexvXkdow%3D%3D
+PGB1010603MR    https://eu.mouser.com/ProductDetail/Littelfuse/PGB1010603MR?qs=gu7KAQ731URLg4GSnNNN7Q%3D%3D
+MBR0530         https://eu.mouser.com/ProductDetail/onsemi/MBR0530T3G?qs=3JMERSakebpEmdUS6GetdQ%3D%3D
+TP20R           https://eu.mouser.com/ProductDetail/KOA-Speer/RN73R1ETTP20R0D50?qs=vLWxofP3U2xF4IfSiw9UAw%3D%3D
+DS3231SN#       https://eu.mouser.com/ProductDetail/Analog-Devices-Maxim-Integrated/DS3231SN?qs=1eQvB6Dk1vhUlr8%2FOrV0Fw%3D%3D
+
+W25Q512JVEIQ    https://eu.mouser.com/ProductDetail/Winbond/W25Q512JVEIQ?qs=l7cgNqFNU1jw6svr3at6tA%3D%3D
+MAX17048G+T10   https://eu.mouser.com/ProductDetail/Analog-Devices-Maxim-Integrated/MAX17048G%2bT10?qs=D7PJwyCwLAoGnnn8jEPRBQ%3D%3D
+
+USBLC6-2SC6Y    https://eu.mouser.com/ProductDetail/STMicroelectronics/USBLC6-2SC6Y?qs=gNDSiZmRJS%2FOgDexvXkdow%3D%3D
+
+DMG2305UX-7     https://eu.mouser.com/ProductDetail/Diodes-Incorporated/DMG2305UX-7?qs=L1DZKBg7t5F%2FNBHrjfxC%252Bg%3D%3D
+
+XC6220A331MR-G  https://eu.mouser.com/ProductDetail/Torex-Semiconductor/XC6220A331MR-G?qs=AsjdqWjXhJ8ZSWznL1J0gg%3D%3D
+SI1308EDL-T1-BE3  https://eu.mouser.com/ProductDetail/Vishay-Siliconix/SI1308EDL-T1-BE3?qs=zW32dvEIR3shhEGZ2ACCcQ%3D%3D
+MCP73831        https://eu.mouser.com/ProductDetail/Microchip-Technology/MCP73831T-2ACI-OT?qs=yUQqVecv4qvbBQBGbHx0Mw%3D%3D
+
+ESP32-C6-WROOM-1-N8   https://eu.mouser.com/ProductDetail/Espressif-Systems/ESP32-C6-WROOM-1-N8?qs=8Wlm6%252BaMh8ST02Gmwp74cw%3D%3D
+
+BD5229G     https://eu.mouser.com/ProductDetail/ROHM-Semiconductor/BD5229G-1TR?qs=sGAEpiMZZMutXGli8Ay4kGHG90gjHVFpj6WJfKJTe9w%3D
+
+FH34SRJ-24S-0.5SH_99_   https://eu.mouser.com/ProductDetail/Hirose-Connector/FH34SRJ-24S-0.5SH50?qs=iyLo5FA4poC8fzWlavnA7A%3D%3D
+
+BME688     https://eu.mouser.com/ProductDetail/Bosch-Sensortec/BME688?qs=IS%252B4QmGtzzqQoVDscqwx3A%3D%3D
+
+
