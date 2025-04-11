@@ -73,34 +73,43 @@ SPI			  GPIO7, GPIO2, GPIO6		E-paper display, NOR flash memory, SD storage
 UART			GPIO16, GPIO17			Debugging / Firmware change
 GPIO			GPIO0...GPIO23			Buttons, indicator outputs
 
-BOM and links
+BOM , links , datasheets
 BUTTON_CUSYOMV1 https://eu.mouser.com/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D
-100nF capacitor https://store.comet.srl.ro/Catalogue/Product/48939/
+https://eu.mouser.com/datasheet/2/307/en_b3f-13826.pdf
+
+100nF capacitor https://store.comet.srl.ro/Catalogue/Product/48939/ https://store.comet.bg/download-file.php?id=11
 CPH3225A        https://eu.mouser.com/ProductDetail/Seiko-Semiconductors/CPH3225Aqs=3etwrb1wR%252BhUOph6lAO7eg%3D%3D
-1.7uF 			capacitorhttps://store.comet.srl.ro/Catalogue/Product/5163462/
+https://ro.mouser.com/datasheet/2/360/Seiko_Instruments_MicroBattery_E_20230330_2024Jan_-3561061.pdf
+1.7uF capacitor https://store.comet.srl.ro/Catalogue/Product/5163462/ https://store.comet.bg/download-file.php?id=25117
 USBLC6-2SC6Y    https://eu.mouser.com/ProductDetail/STMicroelectronics/USBLC6-2SC6Yqs=gNDSiZmRJS%2FOgDexvXkdow%3D%3D
+https://ro.mouser.com/datasheet/2/389/usblc6_2sc6y-1852505.pdf
 PGB1010603MR    https://eu.mouser.com/ProductDetail/Littelfuse/PGB1010603MR?qs=gu7KAQ731URLg4GSnNNN7Q%3D%3D
+https://www.littelfuse.com/assetdocs/pulseguard-esd-suppressors-pgb1-datasheet?assetguid=8a337998-d54d-466b-be4e-dc5bcd1f9321
 MBR0530         https://eu.mouser.com/ProductDetail/onsemi/MBR0530T3G?qs=3JMERSakebpEmdUS6GetdQ%3D%3D
+https://www.littelfuse.com/assetdocs/pulseguard-esd-suppressors-pgb1-datasheet?assetguid=8a337998-d54d-466b-be4e-dc5bcd1f9321
 TP20R           https://eu.mouser.com/ProductDetail/KOA-Speer/RN73R1ETTP20R0D50?qs=vLWxofP3U2xF4IfSiw9UAw%3D%3D
 DS3231SN#       https://eu.mouser.com/ProductDetail/Analog-Devices-Maxim-Integrated/DS3231SN?qs=1eQvB6Dk1vhUlr8%2FOrV0Fw%3D%3D
-
+https://www.koaspeer.com/pdfs/RN73R.pdf
 W25Q512JVEIQ    https://eu.mouser.com/ProductDetail/Winbond/W25Q512JVEIQ?qs=l7cgNqFNU1jw6svr3at6tA%3D%3D
+https://ro.mouser.com/datasheet/2/949/Winbond_W25Q512JV_Datasheet-3240039.pdf
 MAX17048G+T10   https://eu.mouser.com/ProductDetail/Analog-Devices-Maxim-Integrated/MAX17048G%2bT10?qs=D7PJwyCwLAoGnnn8jEPRBQ%3D%3D
-
+https://ro.mouser.com/datasheet/2/609/MAX17048_MAX17049-3469099.pdf
 USBLC6-2SC6Y    https://eu.mouser.com/ProductDetail/STMicroelectronics/USBLC6-2SC6Y?qs=gNDSiZmRJS%2FOgDexvXkdow%3D%3D
-
+https://ro.mouser.com/datasheet/2/389/usblc6_2sc6y-1852505.pdf
 DMG2305UX-7     https://eu.mouser.com/ProductDetail/Diodes-Incorporated/DMG2305UX-7?qs=L1DZKBg7t5F%2FNBHrjfxC%252Bg%3D%3D
-
+https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf
 XC6220A331MR-G  https://eu.mouser.com/ProductDetail/Torex-Semiconductor/XC6220A331MR-G?qs=AsjdqWjXhJ8ZSWznL1J0gg%3D%3D
+https://ro.mouser.com/datasheet/2/760/xc6220-3371556.pdf
 SI1308EDL-T1-BE3  https://eu.mouser.com/ProductDetail/Vishay-Siliconix/SI1308EDL-T1-BE3?qs=zW32dvEIR3shhEGZ2ACCcQ%3D%3D
+https://www.vishay.com/doc?63399
 MCP73831        https://eu.mouser.com/ProductDetail/Microchip-Technology/MCP73831T-2ACI-OT?qs=yUQqVecv4qvbBQBGbHx0Mw%3D%3D
-
+https://ro.mouser.com/datasheet/2/268/MCP73831_Family_Data_Sheet_DS20001984H-3441711.pdf
 ESP32-C6-WROOM-1-N8   https://eu.mouser.com/ProductDetail/Espressif-Systems/ESP32-C6-WROOM-1-N8?qs=8Wlm6%252BaMh8ST02Gmwp74cw%3D%3D
-
+https://ro.mouser.com/datasheet/2/891/Espressif_ESP32_C6_WROOM_1__Datasheet_V0_1_PRELIMI-3239987.pdf
 BD5229G     https://eu.mouser.com/ProductDetail/ROHM-Semiconductor/BD5229G-1TR?qs=sGAEpiMZZMutXGli8Ay4kGHG90gjHVFpj6WJfKJTe9w%3D
-
+https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/voltage_detector/bd52xxg-1-e.pdf
 FH34SRJ-24S-0.5SH_99_   https://eu.mouser.com/ProductDetail/Hirose-Connector/FH34SRJ-24S-0.5SH50?qs=iyLo5FA4poC8fzWlavnA7A%3D%3D
-
+https://ro.mouser.com/datasheet/2/185/FH34SRJ_24S_0_5SH_50__CL0580_1255_6_50_2DDrawing_0-1615030.pdf
 BME688     https://eu.mouser.com/ProductDetail/Bosch-Sensortec/BME688?qs=IS%252B4QmGtzzqQoVDscqwx3A%3D%3D
-
+https://ro.mouser.com/datasheet/2/783/bst_bme688_fl000-2307034.pdf
 
